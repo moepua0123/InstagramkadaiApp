@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		0C7B4FE024A10D22007B8D4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B4FDF24A10D22007B8D4A /* AppDelegate.swift */; };
 		0C7B4FE224A10D22007B8D4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B4FE124A10D22007B8D4A /* SceneDelegate.swift */; };
-		0C7B4FE424A10D22007B8D4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B4FE324A10D22007B8D4A /* ViewController.swift */; };
 		0C7B4FE724A10D22007B8D4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C7B4FE524A10D22007B8D4A /* Main.storyboard */; };
 		0C7B4FE924A10D24007B8D4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C7B4FE824A10D24007B8D4A /* Assets.xcassets */; };
 		0C7B4FEC24A10D24007B8D4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C7B4FEA24A10D24007B8D4A /* LaunchScreen.storyboard */; };
+		0C7B4FF424A10D56007B8D4A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B4FF324A10D56007B8D4A /* LoginViewController.swift */; };
+		0C7B4FF624A10D6D007B8D4A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B4FF524A10D6D007B8D4A /* HomeViewController.swift */; };
+		0C7B4FF824A10D85007B8D4A /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B4FF724A10D85007B8D4A /* ImageSelectViewController.swift */; };
+		0C7B4FFA24A10D92007B8D4A /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B4FF924A10D92007B8D4A /* PostViewController.swift */; };
+		0C7B4FFC24A10DA3007B8D4A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B4FFB24A10DA2007B8D4A /* SettingViewController.swift */; };
+		0C7B4FFE24A10FD9007B8D4A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B4FFD24A10FD9007B8D4A /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C7B4FDC24A10D22007B8D4A /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C7B4FDF24A10D22007B8D4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C7B4FE124A10D22007B8D4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0C7B4FE324A10D22007B8D4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0C7B4FE624A10D22007B8D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C7B4FE824A10D24007B8D4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C7B4FEB24A10D24007B8D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C7B4FED24A10D24007B8D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C7B4FF324A10D56007B8D4A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0C7B4FF524A10D6D007B8D4A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0C7B4FF724A10D85007B8D4A /* ImageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectViewController.swift; sourceTree = "<group>"; };
+		0C7B4FF924A10D92007B8D4A /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		0C7B4FFB24A10DA2007B8D4A /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		0C7B4FFD24A10FD9007B8D4A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +68,12 @@
 			children = (
 				0C7B4FDF24A10D22007B8D4A /* AppDelegate.swift */,
 				0C7B4FE124A10D22007B8D4A /* SceneDelegate.swift */,
-				0C7B4FE324A10D22007B8D4A /* ViewController.swift */,
+				0C7B4FF324A10D56007B8D4A /* LoginViewController.swift */,
+				0C7B4FF524A10D6D007B8D4A /* HomeViewController.swift */,
+				0C7B4FF724A10D85007B8D4A /* ImageSelectViewController.swift */,
+				0C7B4FF924A10D92007B8D4A /* PostViewController.swift */,
+				0C7B4FFB24A10DA2007B8D4A /* SettingViewController.swift */,
+				0C7B4FFD24A10FD9007B8D4A /* TabBarController.swift */,
 				0C7B4FE524A10D22007B8D4A /* Main.storyboard */,
 				0C7B4FE824A10D24007B8D4A /* Assets.xcassets */,
 				0C7B4FEA24A10D24007B8D4A /* LaunchScreen.storyboard */,
@@ -138,7 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C7B4FE424A10D22007B8D4A /* ViewController.swift in Sources */,
+				0C7B4FF824A10D85007B8D4A /* ImageSelectViewController.swift in Sources */,
+				0C7B4FFE24A10FD9007B8D4A /* TabBarController.swift in Sources */,
+				0C7B4FF624A10D6D007B8D4A /* HomeViewController.swift in Sources */,
+				0C7B4FFA24A10D92007B8D4A /* PostViewController.swift in Sources */,
+				0C7B4FFC24A10DA3007B8D4A /* SettingViewController.swift in Sources */,
+				0C7B4FF424A10D56007B8D4A /* LoginViewController.swift in Sources */,
 				0C7B4FE024A10D22007B8D4A /* AppDelegate.swift in Sources */,
 				0C7B4FE224A10D22007B8D4A /* SceneDelegate.swift in Sources */,
 			);
