@@ -72,9 +72,9 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="captionLabel" destination="KcX-MB-eg8" id="bg9-or-Bj8"/>
-                <outlet property="dateLabel" destination="gh0-ub-xbd" id="hR8-ks-rjB"/>
+                <outlet property="dateLabel" destination="3gY-98-f04" id="Usz-wj-BCa"/>
                 <outlet property="likeButton" destination="pDm-vm-nyr" id="RfC-Gb-fSQ"/>
-                <outlet property="likeLabel" destination="3gY-98-f04" id="Q8F-na-PIk"/>
+                <outlet property="likeLabel" destination="gh0-ub-xbd" id="vM2-Fl-cUU"/>
                 <outlet property="postImageView" destination="f1A-0e-haf" id="hvw-tc-sfR"/>
             </connections>
             <point key="canvasLocation" x="166.66666666666669" y="174.77678571428569"/>
