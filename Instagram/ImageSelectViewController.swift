@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import CLImageEditor
 
-class ImageSelectViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ImageSelectViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLImageEditorDelegate {
     @IBAction func handleLibraryButton(_ sender: Any) {
         // ライブラリ（カメラロール）を指定してピッカーを開く
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
@@ -47,6 +48,9 @@ class ImageSelectViewController: UIViewController, UIImagePickerControllerDelega
 
             // あとでCLImageEditorライブラリで加工する
             print("DEBUG_PRINT: image = \(image)")
+            let editor = CLImageEditor(image: image)!
+            editor.delegate = self
+            picker.present(editor, animated: true, completion: nil)
 
         }
     }
@@ -55,6 +59,18 @@ class ImageSelectViewController: UIViewController, UIImagePickerControllerDelega
         // ImageSelectViewController画面を閉じてタブ画面に戻る
         self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
+    
+    func imageEditor(_ editor: CLImageEditor!, didFinishEditingWith image: UIImage!) {
+        // 投稿画面を開く
+        let postViewController = self.storyboard?.instantiateViewController(withIdentifier: "Post") as! PostViewController
+        postViewController.image = image!
+        editor.present(postViewController, animated: true, completion: nil)
+    }
+    
+    func imageEditorDidCancel(_ editor: CLImageEditor!) {
+           // ImageSelectViewController画面を閉じてタブ画面に戻る
+           self.presentingViewController?.dismiss(animated: true, completion: nil)
+       }
     
 
     /*

@@ -7,12 +7,25 @@
 //
 
 import UIKit
+import Firebase
+import SVProgressHUD
 
 class PostViewController: UIViewController {
+    var image: UIImage!
 
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var textField: UITextField!
+    
+    @IBAction func handlePostButton(_ sender: Any) {
+    }
+    @IBAction func handleCancelButton(_ sender: Any) {
+    }
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
+        imageView.image = image
         // Do any additional setup after loading the view.
     }
     
