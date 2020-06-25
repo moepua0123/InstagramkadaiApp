@@ -17,30 +17,34 @@ class CommentViewController: UIViewController {
     //課題追加　コメント投稿ボタンが押された時
     @IBAction func postCommentButton(_ sender: Any) {
         //コメントの取得
-        //var oldcomment = postData.comment
+        var oldcomment = postData.comment
+        let username = postData.name
+        let comment = username! + CommentTextField.text!
         
             // 今回新たにいいねを押した場合は、myidを追加する更新データを作成
             //updateValue = FieldValue.arrayUnion([myid])
-        //}
+        oldcomment.append(comment)
+        
        //コメント欄に更新データを書き込む
         let commentRef = Firestore.firestore().collection(Const.PostPath).document(postData.id)
         
-        commentRef.updateData(["comment":CommentTextField.text!])
+        commentRef.updateData(["comment":oldcomment])
         
         //すでにあるコメントに追加していく→昔のコメントも更新されてしまう
-        let oldcomment = Firestore.firestore().collection(Const.PostPath).document(postData.id)
-        oldcomment.updateData(["comment":CommentTextField.text!])
+        //let oldcomment = Firestore.firestore().collection(Const.PostPath).document(postData.id)
+        //oldcomment.updateData(["comment":CommentTextField.text!])
         
 
         //ユーザー名の保存
+        
 
         // Firebaseに投稿データを保存する
-        let name = Auth.auth().currentUser?.displayName
-        let postDic = [
-        "commentName": name!,
-        "comment": self.CommentTextField.text!,
-        ] as [String : Any]
-        commentRef.setData(postDic)
+        //let name = Auth.auth().currentUser?.displayName
+        //let postDic = [
+       // "commentName": name!,
+        //"comment": self.CommentTextField.text!,
+//        ] as [String : Any]
+//        commentRef.setData(postDic)
         
        
         // HUDで投稿処理中の表示を開始
