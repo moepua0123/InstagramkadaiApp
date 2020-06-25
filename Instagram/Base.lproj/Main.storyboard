@@ -293,6 +293,49 @@
             </objects>
             <point key="canvasLocation" x="2744.9275362318845" y="114.50892857142857"/>
         </scene>
+        <!--Comment View Controller-->
+        <scene sceneID="E9Z-4K-Xpk">
+            <objects>
+                <viewController storyboardIdentifier="Comment" id="l5Y-ZD-mOq" customClass="CommentViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ehQ-DG-z2b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="コメントを記入" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LjP-Zv-o0C">
+                                <rect key="frame" x="10" y="124" width="394" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyV-ZN-ib9">
+                                <rect key="frame" x="57" y="178" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="vVN-zF-gDS"/>
+                                </constraints>
+                                <state key="normal" title="コメント投稿" backgroundImage="btn"/>
+                                <connections>
+                                    <action selector="postCommentButton:" destination="l5Y-ZD-mOq" eventType="touchUpInside" id="3aE-dh-VO8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ebP-89-9PP" firstAttribute="trailing" secondItem="LjP-Zv-o0C" secondAttribute="trailing" constant="10" id="2Yg-U6-GGh"/>
+                            <constraint firstItem="LjP-Zv-o0C" firstAttribute="centerX" secondItem="ehQ-DG-z2b" secondAttribute="centerX" id="MiU-NU-Ng7"/>
+                            <constraint firstItem="LjP-Zv-o0C" firstAttribute="top" secondItem="ebP-89-9PP" secondAttribute="top" constant="80" id="aVL-8a-MCA"/>
+                            <constraint firstItem="LjP-Zv-o0C" firstAttribute="leading" secondItem="ebP-89-9PP" secondAttribute="leading" constant="10" id="ads-UG-SEn"/>
+                            <constraint firstItem="cyV-ZN-ib9" firstAttribute="centerX" secondItem="ehQ-DG-z2b" secondAttribute="centerX" id="fud-3l-cb5"/>
+                            <constraint firstItem="cyV-ZN-ib9" firstAttribute="top" secondItem="LjP-Zv-o0C" secondAttribute="bottom" constant="20" id="vNA-Im-eA6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ebP-89-9PP"/>
+                    </view>
+                    <connections>
+                        <outlet property="CommentTextField" destination="LjP-Zv-o0C" id="Bsu-7c-WnU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ba8-wH-gtx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3455" y="105"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="J43-yU-ZUB">
             <objects>
