@@ -46,7 +46,15 @@ class PostTableViewCell: UITableViewCell {
 
         //課題追加　コメントの表示
         self.commentLabel.text = "\(postData.comment)"
+        
+        //コメントの改行
+        var commentString = ""
+        for comment in postData.comment {
+            commentString += comment + "\n"
+        }
 
+        self.commentLabel.text = commentString
+        
         
         // 日時の表示
         self.dateLabel.text = ""
